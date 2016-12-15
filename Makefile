@@ -5,13 +5,14 @@
 ## Login   <slejeune@epitech.net>
 ## 
 ## Started on  Tue Dec  6 10:47:14 2016 Simon LEJEUNE
-## Last update Tue Dec  6 20:31:15 2016 Simon LEJEUNE
+## Last update Thu Dec 15 16:59:49 2016 Simon LEJEUNE
 ##
 
 SRC	=	src/error.c \
 		src/help.c \
 		src/main.c \
-		src/functions.c
+		src/functions.c	\
+		src/window.c	
 
 OBJ	=	$(SRC:.c=.o)
 

@@ -5,14 +5,22 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Tue Dec  6 19:37:11 2016 Simon LEJEUNE
-** Last update Tue Dec  6 20:55:32 2016 Simon LEJEUNE
+** Last update Thu Dec 15 17:00:05 2016 Simon LEJEUNE
 */
 
 #include "../include/my.h"
 
 int	main(int ac, char **av)
 {
-  error(ac, av);
+  char	*map;
+  int	i;
+
   if (av[1][0] == '-' && av[1][1] == 'h')
     help();
+  else
+    {
+      map = reading(av[1]);
+      //      i = find_player(map);
+      // moving(map, i);
+    }
 }
