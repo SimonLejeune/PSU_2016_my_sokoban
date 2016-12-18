@@ -5,7 +5,7 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Tue Dec  6 19:37:11 2016 Simon LEJEUNE
-** Last update Thu Dec 15 17:00:05 2016 Simon LEJEUNE
+** Last update Fri Dec 16 17:08:55 2016 LEJEUNE Simon
 */
 
 #include "../include/my.h"
@@ -20,7 +20,6 @@ int	main(int ac, char **av)
   else
     {
       map = reading(av[1]);
-      //      i = find_player(map);
-      // moving(map, i);
+      moving(map);
     }
 }

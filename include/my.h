@@ -5,7 +5,7 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Tue Dec  6 19:30:38 2016 Simon LEJEUNE
-** Last update Tue Dec  6 20:28:10 2016 Simon LEJEUNE
+** Last update Sat Dec 17 15:12:16 2016 LEJEUNE Simon
 */
 
 #ifndef		MY_H_
@@ -13,7 +13,17 @@
 
 void	my_putchar(char);
 void	my_putstr(char*);
+int	my_strlen(char*);
 int	help();
 int	error(int, char**);
+char	*reading(char*);
+int	moving(char*);
+int	find_player(char*);
+int	move_up(char*, int, int);
+int	move_left(char*, int);
+int	move_down(char*, int, int);
+int	move_right(char*, int);
+int	nb_line(char*);
+int	nb_column(char*);
 
 #endif

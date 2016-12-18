@@ -5,26 +5,27 @@
 ## Login   <slejeune@epitech.net>
 ## 
 ## Started on  Tue Dec  6 10:47:14 2016 Simon LEJEUNE
-## Last update Thu Dec 15 16:59:49 2016 Simon LEJEUNE
+## Last update Fri Dec 16 22:04:12 2016 LEJEUNE Simon
 ##
 
 SRC	=	src/error.c \
 		src/help.c \
 		src/main.c \
 		src/functions.c	\
-		src/window.c	
+		src/window.c	\
+		src/player.c	\
+		src/move.c
 
 OBJ	=	$(SRC:.c=.o)
 
 NAME	=	my_sokoban
 
+CFLAGS	=	-Iinclude
+
 all	:	$(NAME)
 
 $(NAME)	:	$(OBJ)
 		gcc $(OBJ) -o $(NAME) -lncurses -I../include/
-
-gdb	:	$(OBJ)
-		gcc -O0 -ggdb3 $(SRC) -o prog -lncurses -I../include/
 
 clean	:
 		rm -f $(OBJ)

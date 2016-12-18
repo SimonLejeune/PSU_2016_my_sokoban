@@ -5,7 +5,7 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Tue Dec  6 19:28:23 2016 Simon LEJEUNE
-** Last update Tue Dec  6 19:50:19 2016 Simon LEJEUNE
+** Last update Fri Dec 16 16:00:30 2016 LEJEUNE Simon
 */
 
 #include <unistd.h>
@@ -26,4 +26,14 @@ void	my_putstr(char *str)
       my_putchar(str[i]);
       i++;
     }
+}
+
+int	my_strlen(char *str)
+{
+  int	i;
+
+  i = 0;
+  while (str[i] != '\0')
+    i++;
+  return (i);
 }

@@ -5,7 +5,7 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Tue Dec  6 17:38:31 2016 Simon LEJEUNE
-** Last update Thu Dec 15 17:07:45 2016 Simon LEJEUNE
+** Last update Sat Dec 17 15:09:13 2016 LEJEUNE Simon
 */
 
 #include <ncurses.h>
@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <fcntl.h>
+#include "my.h"
 
 int	nb_line(char *map)
 {
@@ -66,9 +67,6 @@ char	*reading(char *map)
   size = row * col;
   buff = malloc(sizeof(char*) * size);
   read(fd, buff, size);
-  mvprintw(0, 0, buff);
-  while ((ch = getch()) != 32)
-    refresh();
-  endwin();
+  printw(buff);
   return (buff);
 }

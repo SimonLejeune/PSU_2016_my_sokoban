@@ -5,7 +5,7 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Thu Dec 15 15:18:47 2016 Simon LEJEUNE
-** Last update Thu Dec 15 16:10:14 2016 Simon LEJEUNE
+** Last update Sat Dec 17 14:53:40 2016 LEJEUNE Simon
 */
 
 int	find_player(char *map)
@@ -18,10 +18,10 @@ int	find_player(char *map)
   while (map[i] != '\0')
     {
       if (map[i] == 'P')
-	perso++;
+	perso = i;
       i++;
     }
-  return (i);
+  return (perso);
 }
 
 int	find_object(char *map)
