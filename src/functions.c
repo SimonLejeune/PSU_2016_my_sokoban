@@ -5,7 +5,7 @@
 ** Login   <slejeune@epitech.net>
 ** 
 ** Started on  Tue Dec  6 19:28:23 2016 Simon LEJEUNE
-** Last update Fri Dec 16 16:00:30 2016 LEJEUNE Simon
+** Last update Tue Dec 20 17:10:50 2016 LEJEUNE Simon
 */
 
 #include <unistd.h>
@@ -33,7 +33,7 @@ int	my_strlen(char *str)
   int	i;
 
   i = 0;
-  while (str[i] != '\0')
+  while (str[i] != '\n')
     i++;
   return (i);
 }
